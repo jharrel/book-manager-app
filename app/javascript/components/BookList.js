@@ -18,12 +18,6 @@ class BookList extends React.Component {
     this.updateSearchTerm = this.updateSearchTerm.bind(this);
   }
 
-  toggleModal = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-
   updateSearchTerm() {
     this.setState({ searchTerm: this.searchInput.current.value });
   }
@@ -40,10 +34,10 @@ class BookList extends React.Component {
   }
 
   renderBooks() {
-    const { activeId, books } = this.props;
+    const { books } = this.props;
     const filteredBooks = books
       .filter(el => this.matchSearchTerm(el))
-      .sort((a, b) => new Date(b.release_date) - new Date(a.release_date));
+      .sort((a, b) => new Date(b.title) - new Date(a.title));
 
     return filteredBooks.map(book => (
       
@@ -78,34 +72,28 @@ class BookList extends React.Component {
 
   render() {
     return (
+    <section className="bookList">
 
-      
-
-      <section className="bookList">
-
-
-
-
-
-
-
-
-          <h2>
-            Books 
-          </h2>
-          
-      <input
-        className="search"
-        placeholder="Search"
-        type="text"
-        ref={this.searchInput}
-        onKeyUp={this.updateSearchTerm}
-      />
-        <div>
-          <Link class="btn btn-lg btn-info text-light font-weight-bold" to="/books/new">New Book</Link>
-        </div>
-      <ul>{this.renderBooks()}</ul>
-      </section>
+    <div className="container py-5">
+      <h1 className="display-4">Books for every occasion</h1>
+        <p className="lead text-muted">
+          We’ve pulled together our most popular books, our latest
+          additions, and our editor’s picks, so there’s sure to be something
+          tempting for you to read.
+        </p>
+    </div>          
+        <input
+          className="search"
+          placeholder="Search"
+          type="text"
+          ref={this.searchInput}
+          onKeyUp={this.updateSearchTerm}
+        />
+          <div>
+            <Link class="btn btn-lg btn-info text-light font-weight-bold" to="/books/new">New Book</Link>
+          </div>
+        <ul>{this.renderBooks()}</ul>
+        </section>
       
     );
   }
