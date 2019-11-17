@@ -1,0 +1,47 @@
+[
+    {
+        "book_type": "sci-fi",
+        "release_date": "2018-05-01",
+        "title": "A Social-Neuroscience Perspective on Empathy",
+        "author": "Claudia Gray",
+        "publisher": "A book company",
+        "read": true,
+        "book_image": "https://images-na.ssl-images-amazon.com/images/I/51sCW8hjMFL._SX278_BO1,204,203,200_.jpg"
+    },
+    {
+        "book_type": "sci-fi",
+        "release_date": "2018-05-01",
+        "title": "A Social-Neuroscience Perspective on Empathy",
+        "author": "Claudia Gray",
+        "publisher": "A book company",
+        "read": true,
+        "book_image": "https://images-na.ssl-images-amazon.com/images/I/51sCW8hjMFL._SX278_BO1,204,203,200_.jpg"
+      },
+      {
+        "book_type": "sci-fi",
+        "release_date": "2018-05-01",
+        "title": "A Social-Neuroscience Perspective on Empathy",
+        "author": "Claudia Gray",
+        "publisher": "A book company",
+        "read": true,
+        "book_image": "https://images-na.ssl-images-amazon.com/images/I/51sCW8hjMFL._SX278_BO1,204,203,200_.jpg"
+      },
+      {
+        "book_type": "sci-fi",
+        "release_date": "2018-05-01",
+        "title": "A Social-Neuroscience Perspective on Empathy",
+        "author": "Claudia Gray",
+        "publisher": "A book company",
+        "read": true,
+        "book_image": "https://images-na.ssl-images-amazon.com/images/I/51sCW8hjMFL._SX278_BO1,204,203,200_.jpg"
+      },
+      {
+        "book_type": "sci-fi",
+        "release_date": "2018-05-01",
+        "title": "A Social-Neuroscience Perspective on Empathy",
+        "author": "Claudia Gray",
+        "publisher": "A book company",
+        "read": true,
+        "book_image": "https://images-na.ssl-images-amazon.com/images/I/51sCW8hjMFL._SX278_BO1,204,203,200_.jpg"
+      }
+]
