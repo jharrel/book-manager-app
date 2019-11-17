@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 class BookList extends React.Component {
   constructor(props) {
     super(props);
@@ -15,6 +16,12 @@ class BookList extends React.Component {
 
     this.searchInput = React.createRef();
     this.updateSearchTerm = this.updateSearchTerm.bind(this);
+  }
+
+  toggleModal = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
   }
 
   updateSearchTerm() {
@@ -71,11 +78,22 @@ class BookList extends React.Component {
 
   render() {
     return (
+
+      
+
       <section className="bookList">
+
+
+
+
+
+
+
+
           <h2>
             Books 
           </h2>
-
+          
       <input
         className="search"
         placeholder="Search"
@@ -88,6 +106,7 @@ class BookList extends React.Component {
         </div>
       <ul>{this.renderBooks()}</ul>
       </section>
+      
     );
   }
 }
